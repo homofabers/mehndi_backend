@@ -39,7 +39,7 @@ def add_category(name: str):
     # add category to categories.json
     with open('categories.json', 'r') as f:
         data = json.load(f)
-    data[id] = {'id': id, 'name': name , 'no_of_images': 0}
+    data[id] = {'name': name , 'no_of_images': 0}
     f = open('categories.json', 'w')
     f.write(json.dumps(data))
     f.close()
